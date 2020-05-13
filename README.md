@@ -86,7 +86,14 @@ where,
 Answer the following question:
 
 * What are the best _k_ hashes and _m_ bits values to store one million _n_ keys (E.g. e52f43cd2c23bb2e6296153748382764) suppose we use the same MD5 hash key from [pickle_hash.py](https://github.com/sithu/cmpe273-spring20/blob/master/midterm/pickle_hash.py#L14) and explain why?
+Using the formulate to calculate bit array size with a false positive rate of 0.05 , the value of _m_ should be around 6235225.
 
+The optimal number of hash functions k must be a positive integer. If m is size of bit array and n is number of elements to be inserted, then k can be calculated as :
+
+```
+k= m/n ln2
+```
+Hence using the above formula we get the value of k as 4.
 ```python
 @lru_cache(5)
 def get(key):
