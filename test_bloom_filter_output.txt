@@ -1,0 +1,13 @@
+pipenv run python3 test_bloom_filter.py 
+'blossom' is probably present!
+'abounds' is probably present!
+'bonny' is probably present!
+'abundant' is probably present!
+'accessable' is probably present!
+'abound' is probably present!
+'facebook' is definitely not present!
+'bolster' is probably present!
+'bloom' is probably present!
+'bonus' is probably present!
+'twitter' is a false positive!
+'abundance' is probably present!
